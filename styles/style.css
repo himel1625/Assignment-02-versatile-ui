@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +33,7 @@ nav {
   justify-content: space-between;
   padding: 2rem 5rem;
   color: white;
+  cursor: pointer;
 }
 .nav-logo {
   font-size: 1.8rem;
@@ -69,13 +71,16 @@ nav {
   width: 60%;
 }
 .header-cation-text h3 {
-  width: 60%;
+  width: 52%;
+  line-height: 4rem;
+  margin-bottom: 1.2rem;
   font-size: 4rem;
   color: rgb(255, 255, 255);
 }
-.header-cation-text h3 span {
-  font-style: italic;
+.header-cation-text h3 > span {
+  font-size: 7rem;
   font-weight: normal;
+  font-family: 'Italianno', cursive;
 }
 .header-cation-text p {
   width: 85%;
@@ -157,11 +162,11 @@ nav {
   border-radius: 50%;
 }
 
-.bottm-350 h3 {
+.bottom-350 h3 {
   color: var(--W-Color);
   font-size: 1.5rem;
 }
-.bottm-350 p {
+.bottom-350 p {
   width: 100%;
   font-size: 0.9rem;
   color: var(--p-Color);
@@ -170,6 +175,10 @@ nav {
 @media only screen and (max-width: 576px) {
   header {
     height: 100%;
+    margin: 1rem;
+  }
+  .nav-links {
+    border: transparent;
   }
   .hide {
     display: block;
@@ -180,10 +189,12 @@ nav {
   ion-icon {
     font-size: 2.5rem;
     cursor: pointer;
+    margin: 0 1rem;
   }
   .header-contain {
     flex-direction: column;
     padding: 0 10px;
+    margin: 0 auto;
   }
   .header-cation-text {
     width: 100%;
@@ -263,7 +274,7 @@ nav {
   margin-top: 15px;
   text-align: center;
 }
-/* Change my Habits section  */
+/* Responsive section  (576px) */
 
 @media only screen and (max-width: 576px) {
   .my-Habits {
@@ -333,7 +344,7 @@ nav {
   height: 85%;
   border-radius: 1rem;
 }
-/* Change my Habits section  */
+/* Responsive section  (576px) */
 @media only screen and (max-width: 576px) {
   .run-extra {
     width: 100%;
@@ -346,8 +357,8 @@ nav {
     margin: 0 auto;
   }
   .run-cation h1 {
-    font-size: 3rem;
-    width: 70%;
+    font-size: 2.7rem;
+    width: 100%;
   }
   .run-btn {
     margin-top: 5%;
@@ -358,4 +369,90 @@ nav {
     width: 420px;
     height: 280px;
   }
+}
+
+/* Meet Our Team section  */
+.our-team {
+  width: 1060px;
+  height: 782px;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+.our-team-caption {
+  width: 671px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.our-team-caption h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--W-Color);
+}
+.our-team-caption p {
+  font-size: 1rem;
+  color: var(--p-Color);
+  text-align: center;
+}
+.our-team-img {
+  width: 100%;
+  max-width: 1060px;
+  height: 610px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-content: center;
+  grid-row-gap: 1.4rem;
+}
+.-team-meet-card-img img {
+  width: 329px;
+  height: 275px;
+  object-fit: cover;
+  border-radius: 9px;
+  margin-bottom: 4%;
+  margin-left: 3%;
+}
+.img-text {
+  margin-top: -4rem;
+  margin-left: 1rem;
+}
+.img-text h3 {
+  color: var(--W-Color);
+}
+.img-text p {
+  color: var(--p-Color);
+}
+/* Responsive section  (576px) */
+@media only screen and (max-width: 576px) {
+  .our-team-caption h1 {
+    font-size: 1.8rem;
+  }
+  .our-team-caption p {
+    font-size: 0.9rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .our-team {
+    max-width: 576px;
+    width: 100%;
+    height: 120%;
+    margin: 0 auto;
+  }
+  .our-team-img {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .-team-meet-card-img  img {
+    width: 470px;
+    margin: 0 auto;
+    object-fit: cover;
+    margin-top: 2%;
+      margin-left: 2%;
+  }
+
 }
