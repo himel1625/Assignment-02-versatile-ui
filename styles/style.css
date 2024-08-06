@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  list-style: none;
 }
 :root {
   --or-Color: rgb(230, 83, 60);
@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
   background: rgb(0, 0, 0);
   scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }
 /* header section  */
 header {
@@ -243,6 +244,7 @@ nav {
   width: 80%;
   margin: 0 auto;
   margin-top: 20px;
+  text-align: center;
 }
 .habits-card {
   display: grid;
@@ -447,12 +449,101 @@ nav {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
-  .-team-meet-card-img  img {
+  .-team-meet-card-img img {
     width: 470px;
     margin: 0 auto;
     object-fit: cover;
     margin-top: 2%;
-      margin-left: 2%;
+    margin-left: 2%;
   }
+}
 
+/* footer section  */
+footer {
+  width: 1440px;
+  height: 450px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  margin-top: 3%;
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%;
+  padding-top: 10%;
+}
+.footer-item a {
+  text-decoration: none;
+}
+.footer-item1 {
+  width: 35%;
+}
+.footer-main-logo {
+  font-size: 3.4rem;
+  color: var(--or-Color);
+  font-style: italic;
+}
+.footer-item1 p {
+  color: var(--p-Color);
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.footer-item3 li a {
+  color: var(--p-Color);
+  line-height: 1.8rem;
+}
+.footer-item2 li a {
+  color: var(--p-Color);
+  line-height: 1.8rem;
+}
+.footer-menu-logo {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: var(--W-Color);
+  cursor: pointer;
+}
+.footer-bottom-section {
+  margin-top: 5%;
+  text-align: center;
+}
+.line {
+  border-bottom: 1px solid var(--p-Color);
+  width: 80%;
+  margin: 0 auto;
+}
+.copyright {
+  font-size: 1.1rem;
+  color: var(--p-Color);
+  margin-top: 2%;
+}
+/* Responsive section  (576px) */
+@media only screen and (max-width: 576px) {
+  footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+  .footer-item {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .footer-item1 {
+    width: 100%;
+  }
+  .footer-item2 {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .footer-item3 {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .line {
+    width: 98%;
+  }
 }
