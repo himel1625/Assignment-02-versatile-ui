@@ -375,8 +375,73 @@ nav {
     height: 280px;
   }
 }
+/* Challenge section  */
+.Challenge {
+  height: 500px;
+  width: 1440px;
+  margin: 0 auto;
+  margin-top: 3%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+.Challenge-caption h1 {
+  color: var(--W-Color);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+span {
+  color: var(--or-Color);
+}
+.Challenge-caption p {
+  color: var(--p-Color);
+  width: 65%;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+.Challenge-btn {
+  border: 2px solid var(--p-Color);
+  padding: 1rem 2rem;
+  color: var(--W-Color);
+  background: transparent;
+  margin-top: 2rem;
+  outline: none;
+  border-radius: 1.5rem;
+}
+.Challenge-img img {
+  height: 450px;
+  border-radius: 5px;
+}
 
+@media only screen and (max-width: 576px) {
+  .Challenge {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .Challenge-img img {
+    margin-top: 5%;
+  }
+}
 /* bmi section  */
+.MBI {
+  height: 100px;
+  margin-top: 5%;
+}
+.MBI h1 {
+  color: var(--W-Color);
+  margin-left: 25%;
+  margin-bottom: 5px;
+  font-size: 2.8rem;
+}
+.MBI p {
+  color: var(--p-Color);
+  width: 50%;
+  margin: 0 auto;
+}
 .bmi {
   width: 1440px;
   height: 487px;
@@ -422,11 +487,15 @@ td {
   color: var(--p-Color);
   margin-bottom: 2%;
 }
+.from {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 input,
 select {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem;
+  padding: 0.6rem;
   margin: 5px;
   border: none;
   outline: none;
@@ -434,10 +503,7 @@ select {
 ::placeholder {
   color: var(--p-Color);
 }
-.from {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+
 .input-form-select {
   width: 98%;
 }
@@ -456,6 +522,7 @@ button {
   background: var(--or-Color);
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 576px) {
@@ -465,6 +532,13 @@ button {
     margin: 0 auto;
     flex-direction: column;
     margin-top: 5%;
+  }
+  .MBI h1 {
+    margin-left: 3%;
+  }
+  .MBI p {
+    width: 100%;
+    margin-left: 3%;
   }
   .Calculate-section {
     width: 100%;
