@@ -177,6 +177,7 @@ nav {
   header {
     height: 100%;
     margin: 1rem;
+    margin: 0 auto;
   }
   .nav-links {
     border: transparent;
@@ -282,6 +283,7 @@ nav {
   .my-Habits {
     width: 100%;
     height: 100%;
+    margin: 0 auto;
   }
   .habits-card {
     grid-template-columns: repeat(1, 1fr);
@@ -352,6 +354,7 @@ nav {
     width: 100%;
     height: 100%;
     flex-direction: column;
+    margin: 0 auto;
   }
   .run-cation {
     width: 85%;
@@ -373,6 +376,101 @@ nav {
   }
 }
 
+/* bmi section  */
+.bmi {
+  width: 1440px;
+  height: 487px;
+  margin: 0 auto;
+  background: rgb(34, 34, 34);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  margin-top: 5%;
+  border-radius: 8px;
+}
+table,
+th,
+td {
+  border: 1px solid var(--W-Color);
+  border-collapse: collapse;
+  padding: 1rem 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 3.125rem;
+}
+th {
+  color: var(--W-Color);
+}
+td {
+  color: var(--p-Color);
+}
+.caption-logo p {
+  color: var(--W-Color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.Calculate-section {
+  width: 50%;
+}
+.bmi-form-section h1 {
+  color: var(--W-Color);
+  margin-bottom: 3%;
+}
+.bmi-form-section p {
+  color: var(--p-Color);
+  margin-bottom: 2%;
+}
+input,
+select {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  margin: 5px;
+  border: none;
+  outline: none;
+}
+::placeholder {
+  color: var(--p-Color);
+}
+.from {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.input-form-select {
+  width: 98%;
+}
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+button {
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--W-Color);
+  background: var(--or-Color);
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .bmi {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .Calculate-section {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
 /* Meet Our Team section  */
 .our-team {
   width: 1060px;
@@ -526,6 +624,7 @@ footer {
     width: 100%;
     height: 100%;
     margin-top: 5%;
+    margin: o auto;
   }
   .footer-item {
     flex-direction: column;
@@ -546,4 +645,7 @@ footer {
   .line {
     width: 98%;
   }
+}
+.table {
+  color: red;
 }
