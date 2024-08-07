@@ -414,7 +414,7 @@ span {
   height: 450px;
   border-radius: 5px;
 }
-
+/* Responsive section  (576px) */
 @media only screen and (max-width: 576px) {
   .Challenge {
     height: 100%;
@@ -482,6 +482,7 @@ td {
 .bmi-form-section h1 {
   color: var(--W-Color);
   margin-bottom: 3%;
+  font-size: 2.3rem;
 }
 .bmi-form-section p {
   color: var(--p-Color);
@@ -524,7 +525,7 @@ button {
   outline: none;
   cursor: pointer;
 }
-
+/* Responsive section  (576px) */
 @media only screen and (max-width: 576px) {
   .bmi {
     width: 100%;
